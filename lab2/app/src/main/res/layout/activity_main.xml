@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/layout"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maharishi_international_university"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/design_default_color_error"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setbackground"
+        android:layout_gravity="center"
+        android:id="@+id/btn"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"></Button>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/miulogo"
+        android:contentDescription="@string/maharishi_international_university_logo"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:background="@color/material_dynamic_neutral40"
+        android:id="@+id/imgBtn"
+        android:layout_marginTop="20dp"
+        ></ImageButton>
+</LinearLayout>
