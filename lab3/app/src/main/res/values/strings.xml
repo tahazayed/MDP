@@ -7,4 +7,11 @@
     <string name="password_required">Password (required)</string>
     <string name="forget_password">Forget password?</string>
     <string name="sign_in">Sign in</string>
+    <string name="maharishi_international_university_logo">Maharishi International University Logo</string>
+    <string name="password">Password*</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="required_field">* required field</string>
+    <string name="first_name">First name*</string>
+    <string name="last_name">Last name*</string>
+    <string name="email_address">Email address*</string>
 </resources>

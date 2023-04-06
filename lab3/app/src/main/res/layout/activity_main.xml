@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/text_edit_bg"
     android:orientation="vertical"
     android:padding="10dp"
-    android:layout_margin="10dp"
-    tools:context=".MainActivity"
-    android:background="@drawable/text_edit_bg">
+    tools:context=".MainActivity">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:contentDescription="@string/maharishi_international_university_logo"
         android:src="@drawable/miulogo" />
 
     <TextView
@@ -35,14 +36,19 @@
 
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/textEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:background="@drawable/text_edit_bg"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
         android:lines="1"
         android:maxLines="1"
-        android:background="@drawable/text_edit_bg"
-        android:padding="10dp"/>
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="10dp"
+       />
 
     <TextView
         android:layout_width="match_parent"
@@ -57,17 +63,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:autofillHints="password"
+        android:background="@drawable/text_edit_bg"
+        android:hint="Password"
         android:inputType="textPassword"
         android:lines="1"
         android:maxLines="1"
-        android:background="@drawable/text_edit_bg"
-        android:padding="10dp"/>
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="10dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autoLink="all"
         android:clickable="true"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         android:text="@string/forget_password"
         android:textAlignment="viewEnd" />
 
@@ -115,10 +127,10 @@
         android:id="@+id/createAccountBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/text_edit_bg"
         android:text="@string/create_a_new_account"
         android:textAllCaps="false"
         android:textColor="@color/purple_500"
-        android:background="@drawable/text_edit_bg"
         android:textStyle="bold" />
 
 
