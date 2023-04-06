@@ -2,14 +2,14 @@ package com.example.lab3
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.lab3.databinding.ActivityCreateAccountBinding
+import com.example.lab3.databinding.ActivityLunchaerBinding
 
-class CreateAccount : AppCompatActivity() {
-    private lateinit var binding: ActivityCreateAccountBinding
-
+class ShopByCategoriesActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityLunchaerBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityCreateAccountBinding.inflate(layoutInflater)
+
+        binding = ActivityLunchaerBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
 }
