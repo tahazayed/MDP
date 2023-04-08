@@ -104,14 +104,14 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 if (password != null) {
-                    /*     // this code works as well
-                         val email = Intent(Intent.ACTION_SEND)
-                         email.putExtra(Intent.EXTRA_EMAIL, arrayOf<String>(username))
-                         email.putExtra(Intent.EXTRA_SUBJECT, "your password")
-                         email.putExtra(Intent.EXTRA_TEXT, "your password is:$password")
-                         email.type = "message/rfc822"
-                         startActivity(Intent.createChooser(email, "Choose an Email client :"))
-                     */
+//                        // this code works as well
+//                         val email = Intent(Intent.ACTION_SEND)
+//                         email.putExtra(Intent.EXTRA_EMAIL, arrayOf<String>(username))
+//                         email.putExtra(Intent.EXTRA_SUBJECT, "your password")
+//                         email.putExtra(Intent.EXTRA_TEXT, "your password is:$password")
+//                         email.type = "message/rfc822"
+//                         startActivity(Intent.createChooser(email, "Choose an Email client :"))
+
 
                     val email = Intent(
                         Intent.ACTION_SENDTO,
