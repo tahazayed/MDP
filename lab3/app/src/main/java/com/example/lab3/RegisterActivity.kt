@@ -2,14 +2,14 @@ package com.example.lab3
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.lab3.databinding.ActivityLunchaerBinding
+import com.example.lab3.databinding.ActivityRegisterBinding
 
-class ShopByCategoriesActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityLunchaerBinding
+class RegisterActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityRegisterBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityLunchaerBinding.inflate(layoutInflater)
+        binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
 }
