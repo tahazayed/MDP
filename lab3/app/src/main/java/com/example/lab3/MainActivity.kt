@@ -2,6 +2,7 @@ package com.example.lab3
 
 import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -88,6 +89,44 @@ class MainActivity : AppCompatActivity() {
             }
             if (!userFound) {
                 Toast.makeText(this, "Invalid username or password", Toast.LENGTH_LONG).show()
+            }
+        }
+
+        binding.forgetPasswordBtn.setOnClickListener {
+            var username = binding.textEmail?.text.toString()
+            if (username.isNotEmpty()) {
+                username = username.lowercase()
+                var password: String? = null
+                for (u in ob) {
+                    if (u.email.lowercase() == username) {
+                        password = u.password
+                        break
+                    }
+                }
+                if (password != null) {
+                    /*     // this code works as well
+                         val email = Intent(Intent.ACTION_SEND)
+                         email.putExtra(Intent.EXTRA_EMAIL, arrayOf<String>(username))
+                         email.putExtra(Intent.EXTRA_SUBJECT, "your password")
+                         email.putExtra(Intent.EXTRA_TEXT, "your password is:$password")
+                         email.type = "message/rfc822"
+                         startActivity(Intent.createChooser(email, "Choose an Email client :"))
+                     */
+
+                    val email = Intent(
+                        Intent.ACTION_SENDTO,
+                        Uri.parse("mailto:$username&Subject=your%20password&body=your%20password%20is:$password")
+                    )
+                    startActivity(Intent.createChooser(email, "Choose an Email client :"))
+                } else {
+                    Toast.makeText(
+                        this,
+                        "This email $username is not registered",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            } else {
+                Toast.makeText(this, "Please fill user email first", Toast.LENGTH_LONG).show()
             }
         }
     }
