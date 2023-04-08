@@ -14,4 +14,11 @@
     <string name="first_name">First name*</string>
     <string name="last_name">Last name*</string>
     <string name="email_address">Email address*</string>
+    <string name="shop_by_categories">Shop by Categories</string>
+    <string name="books">Books</string>
+    <string name="clothing">Clothing</string>
+    <string name="organic_food">Organic Food</string>
+    <string name="medicines">Medicines</string>
+    <string name="welcome">Welcome</string>
+    <string name="create_account">Create Account</string>
 </resources>

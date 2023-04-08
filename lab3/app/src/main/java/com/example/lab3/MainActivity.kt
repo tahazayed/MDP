@@ -23,20 +23,33 @@ class MainActivity : AppCompatActivity() {
         ob.add(User("fn4", "ln4", "user4@mail.com", "123456"))
         ob.add(User("fn5", "ln5", "user5@mail.com", "123456"))
 
+        binding.createAccountBtn.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+
+            startActivity(intent)
+        }
         binding.loginBtn.setOnClickListener {
             var username = binding.textEmail.text.toString()
+
             var password = binding.textPassword.text.toString()
 
             var userFound = false
+
             if (username.isNotEmpty() && password.isNotEmpty()) {
+
                 for (user in ob) {
+
                     if (user.email.lowercase() == username.lowercase()
                         && user.password == password
                     ) {
                         userFound = true
+
                         val intent = Intent(this, ShoppingCategoryActivity::class.java)
+
                         intent.putExtra("userEmail", user.email)
+
                         startActivity(intent)
+
                         break
                     }
                 }
