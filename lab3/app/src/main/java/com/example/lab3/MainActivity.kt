@@ -77,7 +77,7 @@ class MainActivity : AppCompatActivity() {
                     ) {
                         userFound = true
 
-                        val intent = Intent(this, ShoppingCategoryActivity::class.java)
+                        val intent = Intent(this, ShoppingActivity::class.java)
 
                         intent.putExtra("userEmail", user.email)
 

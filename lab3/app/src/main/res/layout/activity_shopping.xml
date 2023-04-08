@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShoppingCategoryActivity">
+    tools:context=".ShoppingActivity">
 
     <TextView
         android:id="@+id/textViewEmail"
@@ -14,10 +14,10 @@
         android:text="tim@miu.edu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintHorizontal_bias="0.821"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.016" />
+        app:layout_constraintVertical_bias="0.015" />
 
     <TextView
         android:id="@+id/textView7"
@@ -57,6 +57,7 @@
         android:contentDescription="Books Category"
         app:layout_constraintVertical_bias="0.154" />
 
+
     <TextView
         android:id="@+id/textViewBooks"
         android:layout_width="wrap_content"
@@ -64,11 +65,10 @@
         android:text="@string/books"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintHorizontal_bias="0.215"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39" />
-
+        app:layout_constraintVertical_bias="0.417" />
 
     <ImageButton
         android:id="@+id/imageButtonClothing"
@@ -83,6 +83,7 @@
         android:contentDescription="Clothing Category"
         app:layout_constraintVertical_bias="0.154" />
 
+
     <TextView
         android:id="@+id/textViewClothing"
         android:layout_width="wrap_content"
@@ -90,25 +91,24 @@
         android:text="@string/clothing"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintHorizontal_bias="0.788"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39" />
-
+        app:layout_constraintVertical_bias="0.417" />
 
     <ImageButton
         android:id="@+id/imageButtonBetterHealth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:contentDescription="Better Health Category"
         android:src="@drawable/better_health"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.031"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="Better Health Category"
-        app:layout_constraintVertical_bias="0.567" />
+        app:layout_constraintVertical_bias="0.641" />
 
     <TextView
         android:id="@+id/textViewBetterHealth"
@@ -118,23 +118,23 @@
         android:text="@string/organic_food"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.712" />
+        app:layout_constraintVertical_bias="0.784" />
 
     <ImageButton
         android:id="@+id/imageButtonAyuveda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="Medicine Category"
         android:src="@drawable/ayuveda"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textViewEmail"
-        android:contentDescription="Medicine Category"
-        app:layout_constraintVertical_bias="0.567" />
+        app:layout_constraintVertical_bias="0.645" />
 
     <TextView
         android:id="@+id/textViewAyuveda"
@@ -147,7 +147,7 @@
         app:layout_constraintHorizontal_bias="0.78"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.712" />
+        app:layout_constraintVertical_bias="0.784" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/groupBooks"
