@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
 
                     val email = Intent(
                         Intent.ACTION_SENDTO,
-                        Uri.parse("mailto:$username&Subject=your%20password&body=your%20password%20is:$password")
+                        Uri.parse("mailto:$username?Subject=your password&body=your password is:$password")
                     )
                     startActivity(Intent.createChooser(email, "Choose an Email client :"))
                 } else {
